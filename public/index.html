@@ -21,16 +21,33 @@
     <title>Advice generator app</title>
   </head>
   <body>
-    <main class="h-[100dvh] bg-nt-dark-blue grid place-items-center text-center px-4">
-      <div class="flex flex-col items-center bg-nt-dark-grayish-blue text-pr-light-cyan font-manrope relative pt-11 pb-16 px-7 rounded-lg max-w-[540px] mx-auto">
-        <p data-adviceNumber class="font-sans text-pr-neon-green leading-none text-xs tracking-[2px] font-bold"></p>
-        <h1 data-advice class="text-2xl mt-8 mb-6"></h1>
+    <main
+      class="grid h-[100dvh] place-items-center bg-nt-dark-blue px-4 text-center"
+    >
+      <div
+        class="relative mx-auto flex max-w-[540px] flex-col items-center rounded-lg bg-nt-dark-grayish-blue px-7 pt-11 pb-16 font-manrope text-pr-light-cyan"
+      >
+        <p
+          data-adviceNumber
+          class="font-sans text-xs font-bold leading-none tracking-[2px] text-pr-neon-green"
+        ></p>
+        <h1 data-advice class="mt-8 mb-6 text-2xl"></h1>
         <picture>
-          <source srcset="../assets/images/pattern-divider-desktop.svg" media="(min-width: 1024px)">
-          <img src="../assets/images/pattern-divider-mobile.svg" alt="">
+          <source
+            srcset="../assets/images/pattern-divider-desktop.svg"
+            media="(min-width: 1024px)"
+          />
+          <img src="../assets/images/pattern-divider-mobile.svg" alt="" />
         </picture>
-        <button data-dice class="w-16 aspect-square bg-pr-neon-green rounded-full absolute bottom-0 left-auto right-auto translate-y-1/2 hover:shadow-[0px_0px_20px] hover:shadow-pr-neon-green">
-          <img src="../assets/images/icon-dice.svg" alt="Dice icon" class="mx-auto">
+        <button
+          data-dice
+          class="absolute bottom-0 left-auto right-auto aspect-square w-16 translate-y-1/2 rounded-full bg-pr-neon-green hover:shadow-[0px_0px_20px] hover:shadow-pr-neon-green"
+        >
+          <img
+            src="../assets/images/icon-dice.svg"
+            alt="Dice icon"
+            class="mx-auto"
+          />
         </button>
       </div>
     </main>
