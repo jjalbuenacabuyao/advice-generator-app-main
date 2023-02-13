@@ -5,8 +5,8 @@ const url = "https://api.adviceslip.com/advice"
 
 async function getData(){
   const data = await fetch(url).then(res => res.json());
-  advice.innerHTML = data.slip.advice;
-  adviceNumber.innerHTML = data.slip.id;
+  advice.innerHTML = `"${data.slip.advice}"`;
+  adviceNumber.innerHTML = `ADVICE #${data.slip.id}`;
 }
 
 getData();
