@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script defer src="/assets/js/index.js"></script>
+    <title>Advice generator app</title>
+  </head>
+  <body>
+    <main
+      class="grid h-[100dvh] place-items-center bg-nt-dark-blue px-4 text-center"
+    >
+      <div
+        class="relative mx-auto flex max-w-[540px] flex-col items-center rounded-lg bg-nt-dark-grayish-blue px-7 pt-11 pb-16 font-manrope text-pr-light-cyan"
+      >
+        <p
+          data-adviceNumber
+          class="font-sans text-xs font-bold leading-none tracking-[2px] text-pr-neon-green"
+        ></p>
+        <h1 data-advice class="mt-8 mb-6 text-2xl"></h1>
+        <picture>
+          <source
+            srcset="../assets/images/pattern-divider-desktop.svg"
+            media="(min-width: 1024px)"
+          />
+          <img src="../assets/images/pattern-divider-mobile.svg" alt="" />
+        </picture>
+        <button
+          data-dice
+          class="absolute bottom-0 left-auto right-auto aspect-square w-16 translate-y-1/2 rounded-full bg-pr-neon-green hover:shadow-[0px_0px_20px] hover:shadow-pr-neon-green"
+        >
+          <img
+            src="../assets/images/icon-dice.svg"
+            alt="Dice icon"
+            class="mx-auto"
+          />
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
