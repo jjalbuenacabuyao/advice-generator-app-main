@@ -21,16 +21,16 @@
     <title>Advice generator app</title>
   </head>
   <body>
-    <main>
-      <div>
-        <p data-adviceNumber></p>
-        <h1 data-advice></h1>
+    <main class="h-[100dvh] bg-nt-dark-blue grid place-items-center text-center px-4">
+      <div class="flex flex-col items-center bg-nt-dark-grayish-blue text-pr-light-cyan font-manrope relative pt-11 pb-16 px-7 rounded-lg max-w-[540px] mx-auto">
+        <p data-adviceNumber class="font-sans text-pr-neon-green leading-none text-xs tracking-[2px] font-bold"></p>
+        <h1 data-advice class="text-2xl mt-8 mb-6"></h1>
         <picture>
           <source srcset="../assets/images/pattern-divider-desktop.svg" media="(min-width: 1024px)">
           <img src="../assets/images/pattern-divider-mobile.svg" alt="">
         </picture>
-        <button data-dice>
-          <img src="../assets/images/icon-dice.svg" alt="Dice icon">
+        <button data-dice class="w-16 aspect-square bg-pr-neon-green rounded-full absolute bottom-0 left-auto right-auto translate-y-1/2">
+          <img src="../assets/images/icon-dice.svg" alt="Dice icon" class="mx-auto">
         </button>
       </div>
     </main>
